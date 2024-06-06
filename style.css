@@ -1,0 +1,100 @@
+* {
+    font-family: Nunito Sans;
+    color: #234B68;
+    font-weight: bold;
+    font-size: 16;
+}
+
+header {
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 50px 20px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #234B68;
+    border-radius: 10px;
+    /* padding : 30px 70px; */
+}
+
+h1 {
+
+}
+
+form {
+ display: grid;
+}
+
+.input-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+input {
+    border: solid 1px #234B68;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.euro::after, .percent::after, .years::after {
+    background-color: #234B68;
+    color: #FCFCFC;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    border-radius: 0 7px 7px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px #4B5563;
+
+}
+
+.euro::after {
+    content: " €";
+    }
+    
+.percent::after {
+    content: " %";
+    }
+    
+.years::after {
+    content: " an(s)";
+    }
+        
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+}
+
+button {
+    background-color: #234B68;
+    color: #FCFCFC;
+    border-radius: 10px;
+    padding: 12px 75px;
+}

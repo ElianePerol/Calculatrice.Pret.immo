@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>Calculatrice prêt immobilier</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="logo">
+            <img src="images/logo-microlead.png" alt="Logo Microlead"/>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="input-area">
+
+            <h1>Calculatrice prêt immobilier</h1>
+
+            <form action="">
+                <div class="input-line">
+                    <label for="mortgage-amount">Montant emprunté</label>
+                    <div class="euro">
+                        <input type="number" name="mortgage-amount" id="amount" placeholder="100 000" required>
+                    </div>
+                </div>
+                <div class="input-line">
+                    <label for="mortgage-rate">Taux nominal</label>
+                    <div class="percent">
+                        <input type="number" name="mortgage-rate" id="rate" placeholder="1.2" required>
+                    </div>
+                </div>
+                <div class="input-line">
+                    <label for="mortgage-length">Durée de remboursement</label>
+                    <div class="years">
+                        <input type="number" name="mortgage-length" id="length" placeholder="15" required>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit">Calculer</button>
+                </div>
+            </form>
+
+        </div>
+        
+    </main>
+    
+</body>
+</html>
