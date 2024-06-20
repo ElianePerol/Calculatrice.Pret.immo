@@ -18,6 +18,8 @@ main {
 }
 
 .input-area {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,14 +44,15 @@ input {
     box-shadow: 0 3px 4px -3px #4B5563;
 }
 
-/* input[type="number"] {
-    -moz-appearance: textfield;
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-} */
+.error-message {
+    position: absolute;
+    color: #FF822E;
+    font-weight: normal;
+}
+
+.error-border {
+    border: solid 1px #FF822E;
+}
 
 .euro, .percent, .years {
     position: relative;
@@ -91,8 +94,14 @@ button {
     background-color: #234B68;
     color: #FCFCFC;
     border-radius: 10px;
+    border: none;
     padding: 12px 75px;
     box-shadow: 0 4px 4px -3px #4B5563;
+}
+
+button:hover {
+    background-color: #29517F;
+    cursor: pointer;
 }
 
 .result {
@@ -116,4 +125,62 @@ th {
 
 td{
     font-weight: normal;
+}
+
+@media screen and (max-width: 724px) {
+
+    /* Input area responsive */
+    .input-area {
+        padding: 15px 30px 20px 30px;
+        align-items: center;
+        height: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    .input-line {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    .euro::after, .percent::after, .years::after {
+        width: 40px;
+        font-size: 14px;
+    }
+
+    #error-display {
+        margin : 10px;
+    }
+
+    .btn {
+        margin: 10px;        
+    }
+
+    /* Result table responsive */
+    .result {
+        padding: 15px 30px
+    }
+
+    #result-table h2 {
+        text-align: center;
+    }
+
+    .scroll-x {
+        overflow-x: auto;
+    }
+    
+    table {
+        width: 700px !important;
+    }
 }
