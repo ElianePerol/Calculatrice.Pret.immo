@@ -213,6 +213,7 @@ function getResultPDF() {
 function getResultPDF() {
 
     const resultPDF = new jsPDF('p', 'pt', 'a4');
+
     resultPDF.setTextColor(35, 63, 104);
 
     // Adds title

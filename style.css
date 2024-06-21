@@ -38,6 +38,10 @@ main {
     gap: 50px;
 }
 
+.input-title {
+    width: 50%;
+}
+
 input {
     border: solid 1px #234B68;
     padding: 5px 10px;
@@ -45,7 +49,6 @@ input {
 }
 
 .error-message {
-    position: absolute;
     color: #FF822E;
     font-weight: normal;
 }
@@ -56,6 +59,7 @@ input {
 
 .euro, .percent, .years {
     position: relative;
+    margin-right: 60px;
 }
 
 .euro::after, .percent::after, .years::after {
@@ -87,7 +91,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 75px;
+    /* padding-top: 75px; */
 }
 
 button {
@@ -95,6 +99,7 @@ button {
     color: #FCFCFC;
     border-radius: 10px;
     border: none;
+    margin-top: 20px;
     padding: 12px 75px;
     box-shadow: 0 4px 4px -3px #4B5563;
 }
@@ -116,7 +121,7 @@ button:hover {
 table {
     width: 100%;
     text-align: left;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 th {
@@ -146,7 +151,7 @@ td{
     }
     .input-line {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 5px;
     }
 
@@ -160,10 +165,11 @@ td{
     }
 
     #error-display {
-        margin : 10px;
+        margin : 0px 40px 20px 70px;
     }
 
     .btn {
+        padding-top : 0px;
         margin: 10px;        
     }
 
